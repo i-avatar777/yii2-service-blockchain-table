@@ -29,9 +29,10 @@ class BlockChainTable extends \yii\db\ActiveRecord
         $this->save();
 
         $t = new Transaction([
-            'row_id'   => $this->id,
-            'table_id' => $table->id,
-            'hash'     => $this->_hash_row,
+            'row_id'     => $this->id,
+            'table_id'   => $table->id,
+            'hash'       => $this->_hash_row,
+            'created_at' => (int)(microtime(true) * 1000),
         ]);
         $t->save();
 

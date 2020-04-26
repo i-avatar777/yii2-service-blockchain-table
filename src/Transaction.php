@@ -9,6 +9,7 @@ namespace iAvatar777\service\BlockchainTable;
  * @property int    id
  * @property int    row_id
  * @property int    table_id
+ * @property int    created_at milsec
  * @property string hash
  *
  * @package iAvatar777\service\BlockchainTable
